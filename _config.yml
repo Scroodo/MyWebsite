@@ -1,0 +1,39 @@
+# Site settings
+title: Meine Persönliche Website
+email: 6969@duck.com
+description: >- # this means to ignore newlines until "baseurl:"
+  Dies ist eine persönliche Website, die mit dem Hacker-Theme erstellt wurde.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://scroodo.github.io/MyWebsite/" # the base hostname & protocol for your site
+
+# Social Links
+github_username: Scroodo # GitHub username
+
+
+# Build settings
+theme: jekyll-theme-hacker
+
+# Exclude these files from the final site
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
+# Plugins
+plugins:
+  - jekyll-feed
+
+# Defaults
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      layout: 'post'
+
+# Permalinks
+permalink: /:year/:month/:day/:title:output_ext
